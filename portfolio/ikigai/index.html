@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 训练同行者-JIM — Winnie® Portfolio</title>
+  <meta name="description" content="家用健身器械拟人 AI 交互体验设计：搭建完整虚拟健身伙伴交互体系，打造品牌差异化。" />
+  <script>document.documentElement.classList.add("page-anim");</script>
+  <link rel="stylesheet" href="../../styles.css?v=p3-jim11" />
+  <link rel="stylesheet" href="../../styles-galileo.css?v=p3-jim-slide" />
+</head>
+<body class="case-ikigai">
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+    <div class="menu-backdrop" id="menuBackdrop"></div>
+    <div class="menu-panel" role="dialog" aria-label="Site menu">
+      <div class="menu-body">
+        <div class="menu-left">
+          <nav class="menu-nav">
+            <a href="../../index.html">Home</a>
+            <a href="../../index.html#portfolio" class="is-active">Portfolio</a>
+            <a href="../../about/index.html">About</a>
+            <a href="../../index.html#contact">Contact</a>
+          </nav>
+          <div class="menu-foot">
+            <img class="menu-portrait" src="../../assets/menu-portrait.png" alt="Winnie" width="72" height="72" />
+            <div class="menu-identity">
+              <div class="menu-name">
+                <span class="accent-dot" aria-hidden="true"></span>
+                <strong>Winnie / 陶文</strong>
+              </div>
+              <p class="menu-role">Designer</p>
+            </div>
+            <a class="menu-phone" href="tel:18355385365">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="M6.6 3.8h2.2l1.1 3.2-1.4 1.4a13.2 13.2 0 0 0 5.1 5.1l1.4-1.4 3.2 1.1v2.2c0 .7-.5 1.3-1.2 1.4A16.6 16.6 0 0 1 5.2 5c.1-.7.7-1.2 1.4-1.2z" stroke-linejoin="round"/>
+              </svg>
+              <span>183 5538 5365</span>
+            </a>
+          </div>
+        </div>
+        <div class="menu-media">
+          <a class="menu-case" href="../goodwell/index.html">
+            <img src="../../assets/menu-case-01.png" alt="" />
+            <span class="menu-case-label">PH260 体验优化</span>
+          </a>
+          <a class="menu-case" href="../galileo/index.html">
+            <img src="../../assets/menu-case-02.png" alt="" />
+            <span class="menu-case-label">PH100 2.0改版设计</span>
+          </a>
+          <a class="menu-case" href="../ikigai/index.html">
+            <img src="../../assets/menu-case-03.png" alt="" />
+            <span class="menu-case-label">训练同行者-JIM</span>
+          </a>
+          <a class="menu-case" href="../flora/index.html">
+            <img src="../../assets/menu-case-04.png" alt="" />
+            <span class="menu-case-label">3D风场可视化</span>
+          </a>
+          <a class="menu-case" href="../encom/index.html">
+            <img src="../../assets/menu-case-05.png" alt="" />
+            <span class="menu-case-label">能源资产地图监控</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <div class="header-left">
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menuOverlay">
+          <span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span>Menu</span>
+        </button>
+        <span class="header-rule" aria-hidden="true"></span>
+        <a class="brand" href="../../index.html">WINNIE<sup>®</sup></a>
+      </div>
+      <div class="header-center local-time" id="localTime" aria-live="polite">
+        <span id="localTimeValue">--:--</span>
+        <span class="time-label">Local Time</span>
+      </div>
+      <a class="header-cta compound" href="../../index.html#contact" id="headerCta">
+        <img class="cta-avatar" src="../../assets/home-cta-avatar.png" alt="" />
+        <span class="cta-label">Contact me <em>/Winnie</em></span>
+        <span class="btn-arrow" aria-hidden="true">›</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-has-bg" id="hero" data-theme="dark">
+      <img class="hero-bg" src="../../assets/case-bg-03.png?v=dark1" alt="" aria-hidden="true" />
+      <div class="hero-bg-shade" aria-hidden="true"></div>
+      <div class="noise" aria-hidden="true"></div>
+      <div class="grid-lines dark" aria-hidden="true"></div>
+      <div class="hero-grid">
+        <div class="hero-media">
+          <div class="hero-frame">
+            <img class="hero-frame-ui" src="../../assets/case03/hero-card.png?v=p3-1" alt="训练同行者 JIM" />
+          </div>
+        </div>
+        <div class="hero-spacer" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <dl class="meta-list">
+            <div><dt>Year</dt><dd>2026</dd></div>
+            <div><dt>Brand</dt><dd>GYMGEST</dd></div>
+            <div><dt>Timeline</dt><dd>4个月</dd></div>
+            <div><dt>Type</dt><dd>调研、AI 角色体系定义、交互规则、视觉规范、AI落地</dd></div>
+          </dl>
+          <span class="accent-dot" aria-hidden="true"></span>
+          <h1>AI 训练同行者-JIM</h1>
+          <p class="hero-lead">家用健身器械拟人 AI 交互体验设计</p>
+          <a class="explore-link" href="#project">Explore Project <span class="explore-icon" aria-hidden="true">›</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="project" id="project" data-theme="light">
+      <div class="grid-lines light" aria-hidden="true"></div>
+      <div class="project-layout">
+        <aside class="quote-col">
+          <div class="quote-sticky">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <blockquote>针对家用健身独自训练缺少陪伴与专业指导的痛点，与 AI 大模型团队协作，搭建完整虚拟健身伙伴交互体系，打造品牌差异化，提升家用用户训练留存。</blockquote>
+            <div class="quote-author">
+              <img src="../../assets/case03/quote-author.png?v=p3-1" alt="训练同行者-JIM" />
+              <div>
+                <strong>训练同行者-JIM</strong>
+                <span>家用健身器械拟人 AI 交互体验设计</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <div class="project-main">
+          <div class="overview">
+            <div class="case-label overview-label"><span class="accent-dot"></span> 项目背景</div>
+            <div class="overview-copy">
+              <h2>PH260的产品背景</h2>
+              <p>PH260是我们在2025年上线的一款多功能家用智能健身设备，涵盖丰富的教学内容，可以让用户在家练600+动作和学习100+课程；随着市场上健身器材的快速发展和AI对各个行业的冲击以及用户对AI功能的期待，ph260产品也需要更新升级，满足用户诉求。</p>
+            </div>
+          </div>
+          <figure class="shot shot-video">
+            <video
+              class="shot-video-el"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              poster="../../assets/case03/s01-poster.png?v=1"
+              aria-label="PH260 产品背景视频"
+            >
+              <source src="../../assets/case03/s01-bg.mp4?v=p3-20s" type="video/mp4" />
+            </video>
+          </figure>
+
+          <article class="case-block">
+            <div class="case-label"><span class="accent-dot"></span> 市场困境</div>
+            <div class="case-body">
+              <h3>为什么居家健身总是半途而废？</h3>
+              <p>我们通过回访调研发现，用户痛点主要体现在用户在家训练场景下独自训练枯燥、动作错误无人纠正、缺少持续激励、自律门槛高等问题，导致设备的使用率低，缺少 “同行者”教学陪伴，鼓励用户持续参与</p>
+            </div>
+          </article>
+          <figure class="shot"><img src="../../assets/case03/s02-market.png?v=p3-1" alt="居家健身市场困境" /></figure>
+
+          <article class="case-block">
+            <div class="case-label"><span class="accent-dot"></span> 市场调查</div>
+            <div class="case-body">
+              <h3>看看健身行业市场怎么做吧</h3>
+              <p>但市面上多数 AI 教练仅实现预设图文、语音播报，本质是指令输出。缺少线下私教带来的陪伴、实时提醒、情绪鼓励，居家用户容易难以坚持、担心动作失误受伤。 本项目不是单纯制作一个虚拟 IP 形象，我作为体验设计师，对接算法团队，为大模型定义人设、触发逻辑、行为边界，将 AI 能力转化成可落地的硬件 + APP 产品体验，打造品牌差异化，提升用户粘性。</p>
+            </div>
+          </article>
+          <figure class="shot"><img src="../../assets/case03/s03-survey.png?v=p3-1" alt="市场竞品与机会洞察" /></figure>
+
+          <article class="case-block">
+            <div class="case-label"><span class="accent-dot"></span> 用户访谈洞察</div>
+            <div class="case-body case-body--stack">
+              <h3>从用户需求中寻找方向</h3>
+              <p>通过对现场健身房不同特征的用户进行调研，发现大家对健身房教练的需求主要体现在：</p>
+              <p>1. 专业层面：教练会对学员实时监督，针对动作及时提醒，引导正确的动作节奏</p>
+              <p>2. 情绪层面：陪伴学员训练，在特殊情况下会给予学员正向激励，尽可能让学员坚持训练，避免半途放弃</p>
+              <p>3. 交互层面：教练会针对健身数据，进行讲解与沟通</p>
+              <p class="case-body-break">基于这些真实情况，用户所需要的不止做一个会说话的虚拟形象，需要同时解决「专业指导」+「情绪陪伴」，是能把线下私教的软性体验移植到家用设备。</p>
+            </div>
+          </article>
+          <figure class="shot"><img src="../../assets/case03/s04-insight.png?v=p3-1" alt="用户访谈洞察" /></figure>
+
+          <article class="case-block">
+            <div class="case-label"><span class="accent-dot"></span> 设计目标与策略</div>
+            <div class="case-body case-body--stack">
+              <h3>目标打造全新的健身方式，更专业的指导</h3>
+              <p>业务目标： 增强用户粘性，形成品牌差异化，为用户创造一位AI训练同行者。</p>
+              <p>设计目标： 不止创造一个好看的虚拟形象，而是为解决核心业务问题、构建产品护城河</p>
+              <div class="case-strat-row">
+                <span class="case-strat-label">设计三大策略：</span>
+                <p>
+                  ①角色拟人化：塑造可信、亲和的健身伙伴形象<br />
+                  ②交互场景化：绑定完整训练流程，分阶段匹配情绪与对话<br />
+                  ③硬件适配化：适配嵌入式屏幕性能，控制动画、资源开销
+                </p>
+              </div>
+            </div>
+          </article>
+          <figure class="shot"><img src="../../assets/case03/s05-strategy.png?v=p3-1" alt="设计目标与策略" /></figure>
+
+          <article class="case-block">
+            <div class="case-label"><span class="accent-dot"></span> 用户模型</div>
+            <div class="case-body case-body--stack">
+              <h3>打造实用的AI教练角色</h3>
+              <p>核心用户——“家庭初级健身者”。</p>
+              <p>他们并非追求极致，而是需要规律、陪伴和正反馈。传统的冰冷交互界面或过于硬核的教练，无法满足他们。</p>
+              <p>给可能感到孤独和迷茫的初级用户，设计一个不仅能指导动作，更能提供情绪支持和持续动力的智能伙伴。</p>
+              <p class="case-body-break">需要平衡专业性与亲和力，追求极致的拟真，还是选择低龄的卡通？如何在家居环境中显得不突兀且有科技感？如何确保IP不仅是“花瓶”，而是能深度融入训练流程，解决实际痛点？</p>
+            </div>
+          </article>
+          <figure class="shot"><img src="../../assets/case03/s06-persona.png?v=p3-1" alt="用户模型与视觉映射" /></figure>
+
+          <article class="case-block">
+            <div class="case-label"><span class="accent-dot"></span> 过程尝试</div>
+            <div class="case-body">
+              <h3>风格探索</h3>
+              <p>使用兼顾力量感、亲和力，硬件渲染成本可控的美式卡通风格。</p>
+            </div>
+          </article>
+          <figure class="shot"><img src="../../assets/case03/s07-style.png?v=p3-1" alt="角色风格探索" /></figure>
+
+          <article class="case-block">
+            <div class="case-label"><span class="accent-dot"></span> 角色视觉规范</div>
+            <div class="case-body case-body--stack">
+              <h3>找到我的健身搭子——Jim</h3>
+              <p>目标人群画像：居家健身新手、轻度健身爱好者；</p>
+              <p>角色定位推导：排除严肃严苛教练，选择「乐观、专业、有耐心的同龄健友」；</p>
+            </div>
+          </article>
+          <figure class="shot shot-jim-outfit">
+            <div class="jim-outfit" data-jim-outfit>
+              <img class="jim-outfit-bg" src="../../assets/case03/jim-outfits/board-bg.png?v=1" alt="" />
+              <div class="jim-outfit-stage" aria-hidden="true">
+                <img
+                  class="jim-outfit-char is-active"
+                  data-outfit="blue"
+                  src="../../assets/case03/jim-outfits/jim-blue.png?v=1"
+                  alt=""
+                  style="left:2.878%;top:8.136%;width:58.376%;height:91.864%;"
+                />
+                <img
+                  class="jim-outfit-char"
+                  data-outfit="white"
+                  src="../../assets/case03/jim-outfits/jim-white.png?v=1"
+                  alt=""
+                  style="left:1.476%;top:12.73%;width:64.649%;height:87.27%;"
+                  loading="lazy"
+                />
+                <img
+                  class="jim-outfit-char"
+                  data-outfit="orange"
+                  src="../../assets/case03/jim-outfits/jim-orange.png?v=1"
+                  alt=""
+                  style="left:0%;top:10.892%;width:64.73%;height:89.108%;"
+                  loading="lazy"
+                />
+                <img
+                  class="jim-outfit-char"
+                  data-outfit="gray"
+                  src="../../assets/case03/jim-outfits/jim-gray.png?v=1"
+                  alt=""
+                  style="left:0.591%;top:9.186%;width:65.904%;height:90.814%;"
+                  loading="lazy"
+                />
+              </div>
+              <div class="jim-outfit-swatches" role="tablist" aria-label="形象搭配">
+                <button type="button" class="jim-swatch is-active" role="tab" aria-selected="true" data-outfit="blue">
+                  <span class="jim-swatch-chip" style="background:#83A5C3"></span>
+                  <span class="jim-swatch-label">干练蓝</span>
+                </button>
+                <button type="button" class="jim-swatch" role="tab" aria-selected="false" data-outfit="white">
+                  <span class="jim-swatch-chip jim-swatch-chip--stroke" style="background:#fff"></span>
+                  <span class="jim-swatch-label">阳光白</span>
+                </button>
+                <button type="button" class="jim-swatch" role="tab" aria-selected="false" data-outfit="orange">
+                  <span class="jim-swatch-chip" style="background:#FF6044"></span>
+                  <span class="jim-swatch-label">活力橙</span>
+                </button>
+                <button type="button" class="jim-swatch" role="tab" aria-selected="false" data-outfit="gray">
+                  <span class="jim-swatch-chip" style="background:#8B8B8B"></span>
+                  <span class="jim-swatch-label">硬汉灰</span>
+                </button>
+              </div>
+            </div>
+          </figure>
+
+          <article class="case-block">
+            <div class="case-label"><span class="accent-dot"></span> 情绪交互体系</div>
+            <div class="case-body case-body--stack">
+              <h3>Jim 的情绪表达与交互行为体系</h3>
+              <p>增强用户黏性，通过情感化设计减少训练枯燥感，提升持续使用意愿。因此，表情需要兼顾功能性和情感支持，比如包括鼓励、纠正、庆祝等。</p>
+              <p>训练过程分解为关键环节，确保每个环节都有对应的表情。比如训练前的热身提醒、训练中的动作指导、力竭时的鼓励、完成后的庆祝等。同时要平衡正面反馈和纠正性反馈，避免用户因挫败感而放弃。</p>
+              <p class="case-body-break">表情的一致性，符合IP的性格设定。比如Gest沉稳但不乏幽默，专业但不严厉。每个表情的描述需要具体，统一风格的16种表情，涵盖训练过程中的各种情绪状态、生动有趣</p>
+            </div>
+          </article>
+          <figure class="shot shot-emotion">
+            <div class="emotion-table" aria-label="表情包清单与 GIF 素材">
+              <img class="emotion-table-bg" src="../../assets/case03/s09-emotion-bg.png?v=1" alt="表情包清单表格" />
+              <img class="emotion-gif" src="../../assets/case03/emotion-gifs/01-pro.gif?v=1" alt="专业形象" style="left:30.157%;top:7.396%;width:9.839%;height:5.023%;" loading="lazy" />
+              <img class="emotion-gif" src="../../assets/case03/emotion-gifs/02-hello.gif?v=1" alt="打招呼" style="left:30.157%;top:15.806%;width:9.839%;height:5.023%;" loading="lazy" />
+              <img class="emotion-gif" src="../../assets/case03/emotion-gifs/03-think.gif?v=1" alt="思考中" style="left:30.157%;top:24.586%;width:9.839%;height:5.023%;" loading="lazy" />
+              <img class="emotion-gif" src="../../assets/case03/emotion-gifs/04-train.gif?v=1" alt="快来训练吧" style="left:30.157%;top:32.5%;width:9.839%;height:5.023%;" loading="lazy" />
+              <img class="emotion-gif" src="../../assets/case03/emotion-gifs/05-great.gif?v=1" alt="很棒" style="left:30.157%;top:40.889%;width:9.839%;height:5.023%;" loading="lazy" />
+              <img class="emotion-gif" src="../../assets/case03/emotion-gifs/06-awesome.gif?v=1" alt="棒棒的" style="left:30.157%;top:49.278%;width:9.839%;height:5.023%;" loading="lazy" />
+              <img class="emotion-gif" src="../../assets/case03/emotion-gifs/07-congrats.gif?v=1" alt="恭喜" style="left:29.373%;top:56.643%;width:12.283%;height:6.268%;" loading="lazy" />
+              <img class="emotion-gif" src="../../assets/case03/emotion-gifs/08-confused.gif?v=1" alt="疑惑" style="left:30.587%;top:66.246%;width:9.839%;height:5.023%;" loading="lazy" />
+              <img class="emotion-gif" src="../../assets/case03/emotion-gifs/09-sorry.gif?v=1" alt="抱歉" style="left:30.587%;top:74.297%;width:9.839%;height:5.023%;" loading="lazy" />
+              <img class="emotion-gif" src="../../assets/case03/emotion-gifs/10-thanks.gif?v=1" alt="感谢" style="left:30.587%;top:83.098%;width:9.839%;height:5.023%;" loading="lazy" />
+              <img class="emotion-gif" src="../../assets/case03/emotion-gifs/11-breathe.gif?v=1" alt="呼吸引导" style="left:31.14%;top:92.057%;width:9.885%;height:5.086%;" loading="lazy" />
+              <!-- Figma 559:1549 image 12523626：整表 20% 灰色蒙层 -->
+              <div class="emotion-table-veil" aria-hidden="true"></div>
+            </div>
+          </figure>
+
+          <article class="case-block">
+            <div class="case-label"><span class="accent-dot"></span> 场景落地</div>
+            <div class="case-body">
+              <h3>硬件屏端界面交互场景落地</h3>
+              <p>IP 不是悬浮弹窗，深度融入界面信息流，和数据模块、操作控件联动。</p>
+            </div>
+          </article>
+          <figure class="shot shot-scene">
+            <div class="scene-gif-grid" aria-label="Jim 表情交互 GIF">
+              <img src="../../assets/case03/scene-gifs/jim-01.gif?v=1" alt="疑惑" loading="lazy" />
+              <img src="../../assets/case03/scene-gifs/jim-02.gif?v=1" alt="棒棒的" loading="lazy" />
+              <img src="../../assets/case03/scene-gifs/jim-03.gif?v=1" alt="感谢" loading="lazy" />
+              <img src="../../assets/case03/scene-gifs/jim-04.gif?v=1" alt="恭喜" loading="lazy" />
+              <img src="../../assets/case03/scene-gifs/jim-05.gif?v=1" alt="思考中" loading="lazy" />
+              <img src="../../assets/case03/scene-gifs/jim-06.gif?v=1" alt="很棒" loading="lazy" />
+              <img src="../../assets/case03/scene-gifs/jim-07.gif?v=1" alt="太棒啦" loading="lazy" />
+              <img src="../../assets/case03/scene-gifs/jim-08.gif?v=1" alt="抱歉" loading="lazy" />
+              <img src="../../assets/case03/scene-gifs/jim-09.gif?v=1" alt="快来训练吧" loading="lazy" />
+              <img src="../../assets/case03/scene-gifs/jim-10.gif?v=1" alt="专业形象" loading="lazy" />
+            </div>
+            <img class="scene-ui" src="../../assets/case03/s10-ui.png?v=1" alt="屏端界面场景" loading="lazy" />
+          </figure>
+
+          <article class="case-block">
+            <div class="case-label"><span class="accent-dot"></span> 设计复盘</div>
+            <div class="case-body">
+              <h3>体验价值与业务价值</h3>
+            </div>
+          </article>
+          <figure class="shot"><img src="../../assets/case03/s11-retro.png?v=p3-2" alt="体验价值与业务价值" /></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="next next-cn" id="next" data-theme="light">
+      <div class="next-head next-head-cn">
+        <div class="grid-lines light" aria-hidden="true"></div>
+        <div class="next-head-grid">
+          <a class="all-projects" href="../../index.html#portfolio">
+            <span class="all-projects-ico" aria-hidden="true">←</span>
+            ALL PROJECTS
+          </a>
+          <div class="next-title-wrap">
+            <h2>
+              <span class="next-kicker">NEXT</span>
+              <span class="next-project-word">PROJECT.</span>
+            </h2>
+            <p class="next-tagline">
+              <span>少一点理想假设</span>
+              <span>多解决真实问题</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <article class="case-card" id="project-flora" data-theme="dark">
+        <div class="case-bg" aria-hidden="true">
+          <img class="case-bg-img" src="../../assets/case-bg-04.png?v=dark1" alt="" />
+        </div>
+        <div class="grid-lines dark case-grid" aria-hidden="true"></div>
+        <div class="noise" aria-hidden="true"></div>
+        <div class="case-meta">
+          <span class="case-num"><span class="accent-dot"></span> 04</span>
+          <span>Client <strong>ENVISION</strong></span>
+          <span>Year <strong>2024</strong></span>
+        </div>
+        <div class="case-body">
+          <div class="case-side">
+            <div class="case-thumb">
+              <img src="../../assets/flora-hero.jpg" alt="3D风场能源数据可视化大屏设计预览" />
+            </div>
+            <a class="view-project" href="../flora/index.html">
+              查看项目 <em>VIEW PROJECT</em>
+              <span class="btn-arrow" aria-hidden="true">›</span>
+            </a>
+          </div>
+          <div class="case-copy case-copy-zh">
+            <p class="case-title">3D风场能源数据可视化大屏设计</p>
+            <p>用可视化设计，让复杂的风场数据变得可读、可控、可决策。</p>
+          </div>
+          <div class="case-tags case-tags-zh">
+            <p>产品孵化从0-1<br />与用户体验优化设计</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="contact contact-home" id="contact" data-theme="dark">
+      <div class="noise" aria-hidden="true"></div>
+      <div class="grid-lines dark" aria-hidden="true"></div>
+
+      <div class="contact-grid">
+        <aside class="profile-card">
+          <div class="profile-photo">
+            <img src="../../assets/contact-portrait.png?v=2" alt="Winnie" width="452" height="566" onerror="this.src='../../assets/winnie-portrait.png'" />
+            <a class="get-touch" href="../../about/index.html">
+              <span class="get-touch-zh">查看简历</span>
+              <span class="get-touch-en">View Resume <em>/Winnie</em></span>
+              <span class="btn-arrow" aria-hidden="true">›</span>
+            </a>
+          </div>
+          <div class="profile-info">
+            <div class="profile-name">
+              <span class="accent-dot"></span>
+              <strong>Winnie</strong>
+              <span class="profile-name-cn">/陶文</span>
+            </div>
+            <dl class="meta-list compact">
+              <div><dt>Profession</dt><dd>产品体验设计师</dd></div>
+              <div><dt>Location</dt><dd>上海</dd></div>
+            </dl>
+          </div>
+          <div class="footer-wordmark" aria-hidden="true">Winnie<sup>®</sup></div>
+        </aside>
+
+        <div class="contact-main">
+          <div class="section-kicker"><span class="accent-dot"></span> Contact</div>
+          <h2 class="contact-heading zh-heading">
+            <span>期待与你</span>
+            <span>一起合作！</span>
+          </h2>
+
+          <div class="contact-intro-row">
+            <p class="contact-sub">
+              我能够协助团队承接完整链路的交互设计工作，参与从前期需求构思到产品最终上线全流程。专注搭建逻辑清晰、交互顺滑的产品框架，用可靠的交互方案支撑项目稳步推进。
+            </p>
+            <div class="experience-badge">
+              <span class="slot-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>
+              <strong>5年设计经验</strong>
+              <span>在职-随时到岗</span>
+            </div>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <span class="field-label"><span class="accent-dot"></span> 微信/手机号</span>
+              <a class="contact-value" href="tel:18355385363">183 5538 5363</a>
+            </div>
+            <div class="contact-detail">
+              <span class="field-label"><span class="accent-dot"></span> 邮箱地址</span>
+              <a class="contact-value" href="mailto:taowennnn@163.com">taowennnn@163.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-foot">
+          <div class="crafted-by">
+            <img src="../../assets/contact-crafted-avatar.png" alt="" onerror="this.src='../../assets/winnie-portrait.png'" />
+            <span><i>Crafted By</i><b>Winnie</b></span>
+          </div>
+          <div class="contact-foot-copy">
+            <p>©2026 Winnie</p>
+            <p>Welcome to contact.</p>
+          </div>
+          <nav class="contact-legal-nav" aria-label="Legal">
+            <a href="../../terms/index.html">Terms</a>
+            <a href="../../privacy/index.html">Privacy Policy</a>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../../script.js?v=case03-p3"></script>
+  <script src="../../script-case.js?v=p3-jim-slide"></script>
+</body>
+</html>

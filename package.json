@@ -1,0 +1,17 @@
+{
+  "name": "winnie-portfolio",
+  "private": true,
+  "description": "Local static portfolio site — fully offline, editable HTML/CSS",
+  "scripts": {
+    "start": "npx --yes serve -l 3456 .",
+    "build:pages": "node _build-pages.js",
+    "rebrand": "node rebrand-hanza-to-winnie.js",
+    "measure:home": "node measure-home.js",
+    "measure:case": "node measure-case.js",
+    "download:case": "node download-case-assets.js",
+    "download:home": "node download-home-assets.js"
+  },
+  "dependencies": {
+    "playwright": "^1.62.1"
+  }
+}
