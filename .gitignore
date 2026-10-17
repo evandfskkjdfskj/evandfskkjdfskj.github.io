@@ -1,0 +1,23 @@
+node_modules/
+.DS_Store
+*.log
+assets/_tmp*
+assets/_recover/
+assets/_copy-sync/
+_*.html
+_*.js
+_*.txt
+index-recovered.html
+
+.vercel
+/PORTFOLIO.zip
+/ref-shots/
+/verify-shots/
+/ref-*.png
+/local-*.png
+
+# Tencent Cloud EdgeOne
+.env
+.edgeone/*
+.tef_dist/*
+  
