@@ -94,6 +94,7 @@
 
   /* ---------- Background videos ---------- */
   document.querySelectorAll("video.hero-video, video.case-highlight-video, video.case-bg-video, video.shot-video-el").forEach((video) => {
+    if (video.hasAttribute("data-lazy-video")) return;
     video.muted = true;
     video.playsInline = true;
     const tryPlay = () => {
@@ -359,21 +360,25 @@
       const play = video.play();
       if (play && typeof play.catch === "function") play.catch(() => {});
     };
-    if (!("IntersectionObserver" in window)) {
-      start();
-      return;
-    }
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          start();
-          observer.disconnect();
-        });
-      },
-      { rootMargin: "240px" }
-    );
-    observer.observe(video);
+    const arm = () => {
+      if (!("IntersectionObserver" in window)) {
+        start();
+        return;
+      }
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            start();
+            observer.disconnect();
+          });
+        },
+        { rootMargin: "180px" }
+      );
+      observer.observe(video);
+    };
+    if (document.readyState === "complete") arm();
+    else window.addEventListener("load", arm, { once: true });
   });
 
   /* ---------- Portfolio / blog filters ---------- */
