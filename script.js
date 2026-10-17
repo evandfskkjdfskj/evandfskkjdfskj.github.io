@@ -352,6 +352,30 @@
     });
   });
 
+  document.querySelectorAll("video[data-lazy-video]").forEach((video) => {
+    if (reducedMotion) return;
+    const start = () => {
+      video.preload = "auto";
+      const play = video.play();
+      if (play && typeof play.catch === "function") play.catch(() => {});
+    };
+    if (!("IntersectionObserver" in window)) {
+      start();
+      return;
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          start();
+          observer.disconnect();
+        });
+      },
+      { rootMargin: "240px" }
+    );
+    observer.observe(video);
+  });
+
   /* ---------- Portfolio / blog filters ---------- */
   const filterBar = document.querySelector(".filter-bar");
   if (filterBar) {
