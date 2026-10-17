@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Winnie® — 产品体验设计师 Portfolio</title>
+  <meta name="description" content="Winnie / 陶文 — 产品体验设计师，上海。主导 Web、APP、可视化大屏等多平台交互体验设计。" />
+  <script>document.documentElement.classList.add("page-anim");</script>
+  <link rel="stylesheet" href="styles.css?v=fix8" />
+</head>
+<body>
+  <!-- Menu Overlay -->
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+    <div class="menu-backdrop" id="menuBackdrop"></div>
+    <div class="menu-panel" role="dialog" aria-label="Site menu">
+      <div class="menu-body">
+        <div class="menu-left">
+          <nav class="menu-nav">
+            <a href="#hero" class="is-active">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="about/index.html">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <div class="menu-foot">
+            <img class="menu-portrait" src="assets/menu-portrait.png" alt="Winnie" width="72" height="72" />
+            <div class="menu-identity">
+              <div class="menu-name">
+                <span class="accent-dot" aria-hidden="true"></span>
+                <strong>Winnie / 陶文</strong>
+              </div>
+              <p class="menu-role">Designer</p>
+            </div>
+            <a class="menu-phone" href="tel:18355385365">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="M6.6 3.8h2.2l1.1 3.2-1.4 1.4a13.2 13.2 0 0 0 5.1 5.1l1.4-1.4 3.2 1.1v2.2c0 .7-.5 1.3-1.2 1.4A16.6 16.6 0 0 1 5.2 5c.1-.7.7-1.2 1.4-1.2z" stroke-linejoin="round"/>
+              </svg>
+              <span>183 5538 5365</span>
+            </a>
+          </div>
+        </div>
+        <div class="menu-media">
+          <a class="menu-case" href="portfolio/goodwell/index.html">
+            <img src="assets/menu-case-01.png" alt="" />
+            <span class="menu-case-label">PH260 体验优化</span>
+          </a>
+          <a class="menu-case" href="portfolio/galileo/index.html">
+            <img src="assets/menu-case-02.png" alt="" />
+            <span class="menu-case-label">PH100 2.0改版设计</span>
+          </a>
+          <a class="menu-case" href="portfolio/ikigai/index.html">
+            <img src="assets/menu-case-03.png" alt="" />
+            <span class="menu-case-label">训练同行者-JIM</span>
+          </a>
+          <a class="menu-case" href="portfolio/flora/index.html">
+            <img src="assets/menu-case-04.png" alt="" />
+            <span class="menu-case-label">3D风场可视化</span>
+          </a>
+          <a class="menu-case" href="portfolio/encom/index.html">
+            <img src="assets/menu-case-05.png" alt="" />
+            <span class="menu-case-label">能源资产地图监控</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <div class="header-left">
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menuOverlay">
+          <span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span>Menu</span>
+        </button>
+        <span class="header-rule" aria-hidden="true"></span>
+        <a class="brand" href="#hero">WINNIE<sup>®</sup></a>
+      </div>
+      <div class="header-center local-time" id="localTime" aria-live="polite">
+        <span id="localTimeValue">--:-- --</span>
+        <span class="time-label">Local Time</span>
+      </div>
+      <a class="header-cta compound" href="#contact" id="headerCta">
+        <img class="cta-avatar" src="assets/home-cta-avatar.png" alt="" />
+        <span class="cta-label">Contact me <em>/Winnie</em></span>
+        <span class="btn-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO -->
+    <section class="hero home-hero" id="hero" data-theme="dark">
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        aria-hidden="true"
+      >
+        <source src="assets/home-hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-video-shade" aria-hidden="true"></div>
+      <div class="noise" aria-hidden="true"></div>
+      <div class="grid-lines dark" aria-hidden="true"></div>
+      <div class="hero-bottom">
+        <div class="hero-trust">
+          <div class="avatar-stack" aria-hidden="true">
+            <img src="assets/trust-avatar-1.png" alt="" />
+            <img src="assets/trust-avatar-2.png" alt="" />
+            <img src="assets/trust-avatar-3.png" alt="" />
+          </div>
+          <div class="trust-meta">
+            <p class="trust-line">就职过<strong>3家公司</strong></p>
+            <p><span>目前担任源动智慧 （视源股份）</span><strong>交互设计师</strong></p>
+          </div>
+        </div>
+        <div class="hero-copy-block">
+          <p class="hero-tagline">
+            <span class="hero-tagline-line solid">Hi 你好~我是Winnie！</span>
+            <span class="hero-tagline-line mute">我是一名充满好奇心，</span>
+            <span class="hero-tagline-line mute dim">重视设计思考的设计师。</span>
+          </p>
+        </div>
+        <div class="hero-services hero-projects">
+          <ul>
+            <li><a href="#project-01"><span>/01</span> 小飞鸟自适应体验系统</a></li>
+            <li><a href="#project-02"><span>/02</span> PH100 2.0改版设计</a></li>
+            <li><a href="#project-03"><span>/03</span> 训练同行者-JIM</a></li>
+            <li><a href="#project-04"><span>/04</span> 3D风场能源数据可视化大屏设计</a></li>
+            <li><a href="#project-05"><span>/05</span> Encom Monitor能源资产地图监控产品设计</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="hero-wordmark" aria-hidden="true">
+        <span class="hero-wordmark-text">Winnie<sup>®</sup></span>
+      </div>
+    </section>
+
+    <!-- 3. ABOUT / MISSION -->
+    <section class="about" id="about" data-theme="light">
+      <div class="noise light-noise" aria-hidden="true"></div>
+      <div class="grid-lines light" aria-hidden="true"></div>
+      <div class="about-layout">
+        <div class="profile-rail">
+            <div class="profile-sticky-bound">
+              <aside class="profile-card light sticky-card">
+            <div class="profile-photo">
+              <img src="assets/contact-portrait.png?v=2" alt="Winnie / 陶文" width="452" height="566" onerror="this.src='assets/winnie-portrait.png'" />
+              <a class="get-touch" href="about/index.html">
+                <span class="get-touch-zh">查看简历</span>
+                <span class="get-touch-en">View Resume <em>/Winnie</em></span>
+                <span class="btn-arrow" aria-hidden="true">›</span>
+              </a>
+            </div>
+            <div class="profile-info">
+              <div class="profile-name">
+                <span class="accent-dot"></span>
+                <strong>Winnie</strong>
+                <span class="profile-name-cn">/陶文</span>
+              </div>
+              <dl class="meta-list compact light">
+                <div><dt>Profession</dt><dd>产品体验设计师</dd></div>
+                <div><dt>Location</dt><dd>上海</dd></div>
+              </dl>
+            </div>
+              </aside>
+            </div>
+        </div>
+
+        <div class="about-main">
+          <div class="mission-head">
+            <div class="section-kicker dark"><span class="accent-dot"></span> 01 My Mission</div>
+            <span class="mission-copy">©2021-2026</span>
+          </div>
+          <p class="mission-text">
+            <span class="solid">你好，我是 Winnie，5 年 UX 设计经验，主导过多种尺寸显控屏，Web、App、可视化大屏的 B 端与 C 端产品设计。</span>
+            <span class="muted">曾深入智能硬件与新能源 IoT 领域，独立负责带屏设备交互、配套 App 及 SaaS 监控平台的设计，沉淀出软硬一体体验、数据可视化与多端一致性的完整方法。学习能力强，可快速切入新领域，善于跨团队沟通协作、推动复杂问题落地。</span>
+          </p>
+
+          <div class="stat-cards">
+            <div class="stat-col">
+              <article class="stat-card stat-card-lead">
+                <span class="stat-accent" aria-hidden="true"></span>
+                <div class="stat-card-top">
+                  <span>01 Projects</span>
+                  <span class="mini-squares" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span>
+                </div>
+                <p class="stat-value" data-count="20" data-suffix="+">0+</p>
+                <p class="stat-desc">从早期概念孵化0-1，到打磨优化1-N参与的项目</p>
+              </article>
+              <article class="stat-card">
+                <div class="stat-card-top">
+                  <span>02 Years</span>
+                  <span class="mini-squares" aria-hidden="true"><i></i><i></i><i class="on"></i></span>
+                </div>
+                <p class="stat-value" data-count="5" data-suffix="">0</p>
+                <p class="stat-desc">在产品交互体验、视觉设计上有着多年经验</p>
+              </article>
+            </div>
+            <div class="stat-col stat-col-offset">
+              <article class="stat-card stat-card-lead">
+                <span class="stat-accent" aria-hidden="true"></span>
+                <div class="stat-card-top">
+                  <span>03 Tasks</span>
+                  <span class="mini-squares" aria-hidden="true"><i></i><i></i><i class="on"></i></span>
+                </div>
+                <p class="stat-value" data-count="500" data-suffix="+">0+</p>
+                <p class="stat-desc">需求完整高质量的交付</p>
+              </article>
+              <article class="stat-card">
+                <div class="stat-card-top">
+                  <span>04 Industries</span>
+                  <span class="mini-squares" aria-hidden="true"><i></i><i></i><i class="on"></i></span>
+                </div>
+                <p class="stat-value" data-count="3" data-suffix="">0</p>
+                <p class="stat-desc">设计服务过健身、新能源、汽车等多个行业领域</p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-portfolio-intro">
+          <div class="section-kicker dark"><span class="accent-dot"></span> 02 Portfolio</div>
+          <h2 class="section-title dark"><span class="title-mute">研究</span><br /><span class="title-solid">案例。</span></h2>
+          <p class="section-lead dark"><span class="mute">每个项目都展示了</span><br /><strong>我在设计方面的思考。</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PORTFOLIO — 5 Winnie case studies -->
+    <section class="portfolio" id="portfolio" data-theme="dark">
+      <div class="grid-lines dark" aria-hidden="true"></div>
+      <div class="case-list">
+        <!-- Project 01 — 小飞鸟自适应体验系统 -->
+        <article class="case-card" id="project-01" data-theme="dark">
+          <div class="case-bg" aria-hidden="true">
+            <img class="case-bg-img" src="assets/case-bg-01.png?v=dark1" alt="" />
+          </div>
+          <div class="grid-lines dark case-grid" aria-hidden="true"></div>
+          <div class="noise" aria-hidden="true"></div>
+          <div class="case-meta">
+            <span class="case-num"><span class="accent-dot"></span> 01</span>
+            <span>Client <strong>GYMGEST</strong></span>
+            <span>Year <strong>2025</strong></span>
+          </div>
+          <div class="case-body">
+            <div class="case-side">
+              <div class="case-thumb">
+                <img src="assets/goodwell-hero.jpg" alt="小飞鸟自适应体验系统预览" />
+              </div>
+              <a class="view-project" href="portfolio/goodwell/index.html">
+                查看项目 <em>VIEW PROJECT</em>
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+            <div class="case-copy case-copy-zh">
+              <p class="case-title">小飞鸟自适应体验系统</p>
+              <p>用体验设计激活用户粘性，开创数字化训练体验新范式。</p>
+            </div>
+            <div class="case-tags case-tags-zh">
+              <p>产品孵化从0-1<br />与用户体验优化设计</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 02 — PH100 2.0 改版设计（与详情页 Next 共用同一套 case-card） -->
+        <article class="case-card" id="project-02" data-theme="dark">
+          <div class="case-bg" aria-hidden="true">
+            <img class="case-bg-img" src="assets/case-bg-02.png?v=dark1" alt="" />
+          </div>
+          <div class="grid-lines dark case-grid" aria-hidden="true"></div>
+          <div class="noise" aria-hidden="true"></div>
+          <div class="case-meta">
+            <span class="case-num"><span class="accent-dot"></span> 02</span>
+            <span>Client <strong>GYMGEST</strong></span>
+            <span>Year <strong>2024</strong></span>
+          </div>
+          <div class="case-body">
+            <div class="case-side">
+              <div class="case-thumb">
+                <img src="assets/ph100-thumb.png?v=fix4" alt="PH100 2.0 改版设计预览" />
+              </div>
+              <a class="view-project" href="portfolio/galileo/index.html">
+                查看项目 <em>VIEW PROJECT</em>
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+            <div class="case-copy case-copy-zh">
+              <p class="case-title">PH100 2.0改版设计</p>
+              <p>打磨训练中的交互细节，把真实的使用体验做舒服。</p>
+            </div>
+            <div class="case-tags case-tags-zh">
+              <p>产品迭代从1.0-2.0<br />从发现问题到解决问题</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 03 — 训练同行者 JIM -->
+        <article class="case-card" id="project-03" data-theme="dark">
+          <div class="case-bg" aria-hidden="true">
+            <img class="case-bg-img" src="assets/case-bg-03.png?v=dark1" alt="" />
+          </div>
+          <div class="grid-lines dark case-grid" aria-hidden="true"></div>
+          <div class="noise" aria-hidden="true"></div>
+          <div class="case-meta">
+            <span class="case-num"><span class="accent-dot"></span> 03</span>
+            <span>Client <strong>GYMGEST</strong></span>
+            <span>Year <strong>2026</strong></span>
+          </div>
+          <div class="case-body">
+            <div class="case-side">
+              <div class="case-thumb">
+                <img src="assets/ikigai-hero.png" alt="训练同行者 JIM 预览" />
+              </div>
+              <a class="view-project" href="portfolio/ikigai/index.html">
+                查看项目 <em>VIEW PROJECT</em>
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+            <div class="case-copy case-copy-zh">
+              <p class="case-title">训练同行者 —— JIM</p>
+              <p>以拟人化虚拟角色，重构人机训练沟通体验。</p>
+            </div>
+            <div class="case-tags case-tags-zh">
+              <p>产品孵化从0-1<br />与用户体验优化设计</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 04 — 3D风场能源数据可视化大屏设计 -->
+        <article class="case-card" id="project-04" data-theme="dark">
+          <div class="case-bg" aria-hidden="true">
+            <img class="case-bg-img" src="assets/case-bg-04.png?v=dark1" alt="" />
+          </div>
+          <div class="grid-lines dark case-grid" aria-hidden="true"></div>
+          <div class="noise" aria-hidden="true"></div>
+          <div class="case-meta">
+            <span class="case-num"><span class="accent-dot"></span> 04</span>
+            <span>Client <strong>Envision</strong></span>
+            <span>Year <strong>2023</strong></span>
+          </div>
+          <div class="case-body">
+            <div class="case-side">
+              <div class="case-thumb">
+                <img src="assets/flora-hero.jpg" alt="3D风场能源数据可视化大屏设计预览" />
+              </div>
+              <a class="view-project" href="portfolio/flora/index.html">
+                查看项目 <em>VIEW PROJECT</em>
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+            <div class="case-copy case-copy-zh">
+              <p class="case-title">3D风场能源数据可视化大屏设计</p>
+              <p>用可视化设计，让复杂的风场数据变得可读、可控、可决策。</p>
+            </div>
+            <div class="case-tags case-tags-zh">
+              <p>产品孵化从0-1<br />与用户体验优化设计</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 05 — Encom Monitor能源资产地图监控产品设计 -->
+        <article class="case-card" id="project-05" data-theme="dark">
+          <div class="case-bg" aria-hidden="true">
+            <video
+              class="case-bg-img case-bg-video"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              poster="assets/case05/hero-poster.png?v=p5-vid"
+              aria-hidden="true"
+            >
+              <source src="assets/case05/hero-bg.mp4?v=p5-vid" type="video/mp4" />
+            </video>
+          </div>
+          <div class="grid-lines dark case-grid" aria-hidden="true"></div>
+          <div class="noise" aria-hidden="true"></div>
+          <div class="case-meta">
+            <span class="case-num"><span class="accent-dot"></span> 05</span>
+            <span>Client <strong>Envision</strong></span>
+            <span>Year <strong>2023</strong></span>
+          </div>
+          <div class="case-body">
+            <div class="case-side">
+              <div class="case-thumb">
+                <img src="assets/leapyear-hero.jpg" alt="Encom Monitor能源资产地图监控产品设计预览" />
+              </div>
+              <a class="view-project" href="portfolio/encom/index.html">
+                查看项目 <em>VIEW PROJECT</em>
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+            <div class="case-copy case-copy-zh">
+              <p class="case-title">Encom Monitor能源资产地图监控产品设计</p>
+              <p>将分散的能源资产汇聚于一张地图，把复杂的监控数据转化为直观的资产管理体验。</p>
+            </div>
+            <div class="case-tags case-tags-zh">
+              <p>产品孵化从0-1<br />与用户体验优化设计</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5. EXPERIENCE -->
+    <section class="experience" id="experience" data-theme="light">
+      <div class="grid-lines light cols-3" aria-hidden="true"></div>
+      <div class="experience-head">
+        <div class="section-kicker dark"><span class="accent-dot"></span> 02 Employer</div>
+        <h2 class="section-title dark">Work Experience.</h2>
+        <p class="experience-lead"><strong>5年的UX设计工作经验，</strong><span class="mute">主导过Web、APP、可视化大屏、多种尺寸显控屏的B端和C端多平台类型项目的交互体验设计。</span></p>
+      </div>
+      <div class="experience-grid">
+        <article class="exp-card">
+          <div class="exp-media">
+            <img src="assets/employer-didi.jpg" alt="滴滴出行" />
+          </div>
+          <p class="exp-date"><span class="accent-dot"></span> 2021.07 – 2021.11</p>
+          <h3>滴滴出行 CDX创意设计部 <span>/ 设计实习生</span></h3>
+          <div class="exp-body">
+            <p>负责 AI 开放平台 2.0 新增板块视觉升级工作视觉 UI 设计</p>
+            <p>独立完成智能概念座舱 HMI 交互与视觉设计</p>
+          </div>
+        </article>
+
+        <article class="exp-card">
+          <div class="exp-media">
+            <img src="assets/employer-envision.png" alt="远景科技集团" />
+          </div>
+          <p class="exp-date"><span class="accent-dot"></span> 2021.11 – 2023.04</p>
+          <h3>远景科技集团 UED部门 <span>/ 产品设计师</span></h3>
+          <div class="exp-body">
+            <p>负责远景智能 EnOS 系统风电、光伏新能源监控 ToB 端和 ToG 产品体验设计工作，对内负责信息收集、方案设计、方案验证、确保设计质量管理设计排期，对外与大型国央企客户对接设计需求，有效传达设计意图。</p>
+            <p><strong>信息收集：</strong>产品设计前期市场与竞品分析，用户行为需求调研，深入探索用户使用场景，并沉淀报告输出。</p>
+            <p><strong>方案设计与验证：</strong>负责 SaaS 平台两个产品线，对接 5 大国央企客户，且独立负责 7 个项目需求，与客户目标拉齐，并输出软件解决方案、原型。通过可用性测试、专家走查等验证方案可行性，大大提升了用户在使用复杂场景产品设计中的体验和使用效率。获得客户认可。</p>
+            <p><strong>规范输出：</strong>深度参与 EnOS2.0 横向产品通用组件规范的制定工作，收集一致性问题并归纳整理，调研产出规范方案。制定编写交互与视觉规范，与团队同步提高内部设计规范的落地应用，提高团队效率。</p>
+          </div>
+        </article>
+
+        <article class="exp-card">
+          <div class="exp-media">
+            <img src="assets/employer-cvte.jpg" alt="源动智慧（视源股份）" />
+          </div>
+          <p class="exp-date"><span class="accent-dot"></span> 2023.06 – 至今</p>
+          <h3>源动智慧（视源股份） <span>/ 交互设计师</span></h3>
+          <div class="exp-body">
+            <p>负责全产品线软件交互与设计，确保设计意图落地；发现体验问题并优化排期，保证设计质量；团队建设，构建设计规范与体验度量标准。</p>
+            <ul>
+              <li><strong>用户研究：</strong>定期开展竞品走查与可用性测试（每轮 6-8 名典型用户），结合售后反馈与行为日志，针对家庭、健身房、企业健康角三类场景分别梳理差异化任务流，输出改版机会点。</li>
+              <li><strong>体验优化：</strong>围绕「运动场景 + 人 + 智能设备」重构信息层级与操作路径（如核心数据前置、关键操作从 4 步减至 1 步），统筹用研与产品目标制定优化方案；改版后可用性评分（SUS）提升 22%，核心任务完成率提升约 15%。</li>
+              <li><strong>AIGC 训练：</strong>负责 AI 健身教练角色视觉设计，通过 Stable Diffusion 训练风格 LoRA，结合 Lovart、即梦等工具从 0 到 1 完整生成 AI 健身教练角色形象与多姿态变体，并应用于产品内动态引导、展会物料等场景，快速响应商业诉求。</li>
+              <li><strong>团队建设：</strong>从 0 推动 Figma 组件库与协作流程落地，建立设计走查清单、可用性测试手册及场景化体验度量指标；流程落地后评审周期缩短约 30%，释放约 2 人力的重复性设计投入。</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 6. EDUCATION -->
+    <section class="education" id="education" data-theme="light">
+      <div class="grid-lines light cols-3" aria-hidden="true"></div>
+      <div class="education-layout">
+        <div class="education-intro">
+          <div class="section-kicker dark"><span class="accent-dot"></span> 03 My Education</div>
+          <h2 class="section-title dark">Education.</h2>
+          <p class="education-lead">6年产品设计专业学习<br />其中2.5年韩国留学经验。</p>
+        </div>
+        <div class="education-list">
+          <article class="edu-row">
+            <div class="edu-identity">
+              <img class="edu-logo" src="assets/edu-hongik.png" alt="" />
+              <strong class="edu-school">Hongik University / 弘益大学</strong>
+            </div>
+            <div class="edu-meta">
+              <span class="edu-major">工业设计</span>
+              <span class="edu-degree">硕士</span>
+              <time>2019.09 – 2021.09</time>
+            </div>
+            <span class="edu-plus" aria-hidden="true">+</span>
+          </article>
+          <article class="edu-row">
+            <div class="edu-identity">
+              <img class="edu-logo" src="assets/edu-sejong.png" alt="" />
+              <strong class="edu-school">Sejong University / 世宗大学</strong>
+            </div>
+            <div class="edu-meta">
+              <span class="edu-major">产品设计</span>
+              <span class="edu-degree">交换生</span>
+              <time>2017</time>
+            </div>
+            <span class="edu-plus" aria-hidden="true">+</span>
+          </article>
+          <article class="edu-row">
+            <div class="edu-identity">
+              <img class="edu-logo" src="assets/edu-hefei.png" alt="" />
+              <strong class="edu-school">合肥大学</strong>
+            </div>
+            <div class="edu-meta">
+              <span class="edu-major">产品设计</span>
+              <span class="edu-degree">本科</span>
+              <time>2015 - 2019</time>
+            </div>
+            <span class="edu-plus" aria-hidden="true">+</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT -->
+    <section class="contact" id="contact" data-theme="dark">
+      <div class="noise" aria-hidden="true"></div>
+      <div class="grid-lines dark" aria-hidden="true"></div>
+
+      <div class="contact-grid">
+        <aside class="profile-card">
+          <div class="profile-photo">
+            <img src="assets/contact-portrait.png?v=2" alt="Winnie" width="452" height="566" onerror="this.src='assets/winnie-portrait.png'" />
+            <a class="get-touch" href="about/index.html">
+              <span class="get-touch-zh">查看简历</span>
+              <span class="get-touch-en">View Resume <em>/Winnie</em></span>
+              <span class="btn-arrow" aria-hidden="true">›</span>
+            </a>
+          </div>
+          <div class="profile-info">
+            <div class="profile-name">
+              <span class="accent-dot"></span>
+              <strong>Winnie</strong>
+              <span class="profile-name-cn">/陶文</span>
+            </div>
+            <dl class="meta-list compact">
+              <div><dt>Profession</dt><dd>产品体验设计师</dd></div>
+              <div><dt>Location</dt><dd>上海</dd></div>
+            </dl>
+          </div>
+          <div class="footer-wordmark" aria-hidden="true">Winnie<sup>®</sup></div>
+        </aside>
+
+        <div class="contact-main">
+          <div class="section-kicker"><span class="accent-dot"></span> Contact</div>
+          <h2 class="contact-heading zh-heading">
+            <span>期待与你</span>
+            <span>一起合作！</span>
+          </h2>
+
+          <div class="contact-intro-row">
+            <p class="contact-sub">
+              我能够协助团队承接完整链路的交互设计工作，参与从前期需求构思到产品最终上线全流程。专注搭建逻辑清晰、交互顺滑的产品框架，用可靠的交互方案支撑项目稳步推进。
+            </p>
+            <div class="experience-badge">
+              <span class="slot-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>
+              <strong>5年设计经验</strong>
+              <span>在职-随时到岗</span>
+            </div>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <span class="field-label"><span class="accent-dot"></span> 微信/手机号</span>
+              <a class="contact-value" href="tel:18355385363">183 5538 5363</a>
+            </div>
+            <div class="contact-detail">
+              <span class="field-label"><span class="accent-dot"></span> 邮箱地址</span>
+              <a class="contact-value" href="mailto:taowennnn@163.com">taowennnn@163.com</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Foot: col1 crafted · col2 empty · col3 © · col4 legal (Figma 87:1004) -->
+        <div class="contact-foot">
+          <div class="crafted-by">
+            <img src="assets/contact-crafted-avatar.png" alt="" onerror="this.src='assets/winnie-portrait.png'" />
+            <span><i>Crafted By</i><b>Winnie</b></span>
+          </div>
+          <div class="contact-foot-copy">
+            <p>©2026 Winnie</p>
+            <p>Welcome to contact.</p>
+          </div>
+          <div class="contact-legal-nav" aria-label="Legal">
+            <span>Terms</span>
+            <span>Privacy Policy</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js?v=p5-vid"></script>
+</body>
+</html>
