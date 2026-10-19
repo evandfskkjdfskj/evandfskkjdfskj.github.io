@@ -1189,6 +1189,17 @@ body.page-about .header-cta {
 }
 
 /* About card — spacing/styles from design card ref */
+.profile-photo-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.profile-photo-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 .profile-card.light .profile-photo {
   position: relative;
   width: 100%;
@@ -1707,15 +1718,15 @@ body.page-about .header-cta {
   border-top: 0;
 }
 
-.case-card > .case-hit {
+.case-card .case-side > .case-hit {
   position: absolute;
   inset: 0;
-  z-index: 5;
+  z-index: 4;
 }
 
-.case-card > .case-hit:focus-visible {
+.case-card .case-side > .case-hit:focus-visible {
   outline: 2px solid var(--accent);
-  outline-offset: -4px;
+  outline-offset: -2px;
 }
 
 .case-bg {
