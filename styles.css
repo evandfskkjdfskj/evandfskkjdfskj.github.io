@@ -1707,6 +1707,17 @@ body.page-about .header-cta {
   border-top: 0;
 }
 
+.case-card > .case-hit {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+}
+
+.case-card > .case-hit:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -4px;
+}
+
 .case-bg {
   position: absolute;
   inset: 0;
