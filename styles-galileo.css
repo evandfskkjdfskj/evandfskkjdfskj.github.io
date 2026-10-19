@@ -639,6 +639,22 @@ button:hover .btn-arrow {
   background: #eee;
 }
 
+.case-ph100 .shot-viz {
+  position: relative;
+}
+
+.case-ph100 .shot-viz .viz-video {
+  position: absolute;
+  left: 9.189857%;
+  top: 21.202392%;
+  width: 81.784913%;
+  height: 23.494573%;
+  object-fit: fill;
+  border-radius: 3.068% / 4.934%;
+  pointer-events: none;
+  background: transparent;
+}
+
 .shot img {
   width: 100%;
   height: auto;
