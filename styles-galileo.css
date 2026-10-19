@@ -655,6 +655,38 @@ button:hover .btn-arrow {
   background: transparent;
 }
 
+.case-goodwell .shot-embed {
+  position: relative;
+}
+
+.case-goodwell .shot-embed .embed-video {
+  position: absolute;
+  object-fit: fill;
+  pointer-events: none;
+  background: transparent;
+}
+
+.case-goodwell .shot-embed-dual .embed-video {
+  left: 0;
+  top: 71.938213%;
+  width: 100%;
+  height: 28.061787%;
+}
+
+.case-goodwell .shot-embed-account .embed-video {
+  left: 0;
+  top: 60.177453%;
+  width: 100%;
+  height: 39.822547%;
+}
+
+.case-goodwell .shot-embed-flow .embed-video {
+  left: 19.630996%;
+  top: 17.585302%;
+  width: 62.95203%;
+  height: 62.992126%;
+}
+
 .shot img {
   width: 100%;
   height: auto;
