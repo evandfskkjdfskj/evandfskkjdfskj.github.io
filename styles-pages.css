@@ -865,23 +865,22 @@
 
 .about-resume-panel--edu {
   min-height: 101px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 18px;
-}
-
-.about-resume-panel--edu p {
-  margin: 0;
   display: grid;
-  grid-template-columns: minmax(9.5em, 1.45fr) minmax(4em, 0.75fr) minmax(3em, 0.6fr) auto;
-  column-gap: 16px;
-  align-items: baseline;
+  grid-template-columns: max-content max-content max-content max-content;
+  column-gap: 28px;
+  row-gap: 18px;
+  align-content: center;
+  justify-content: start;
   font-size: 12px;
   font-weight: 500;
   line-height: 1;
   color: #707070;
   text-transform: uppercase;
+}
+
+.about-resume-panel--edu span {
+  text-align: left;
+  white-space: nowrap;
 }
 
 .about-resume-panel--work {
@@ -1003,9 +1002,9 @@
     padding-top: 0;
   }
 
-  .about-resume-panel--edu p {
-    grid-template-columns: minmax(8em, 1.2fr) minmax(4em, 0.7fr) auto auto;
-    column-gap: 10px;
+  .about-resume-panel--edu {
+    column-gap: 16px;
+    row-gap: 14px;
   }
 }
 
