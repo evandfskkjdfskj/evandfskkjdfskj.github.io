@@ -3987,6 +3987,7 @@ body.page-about .header-cta {
   letter-spacing: 0;
   line-height: normal;
   color: #a0a0a0;
+  cursor: default;
 }
 
 /* Foot row: crafted@col1 · copy@col3 · legal@col4 (Figma 87:1004) */
