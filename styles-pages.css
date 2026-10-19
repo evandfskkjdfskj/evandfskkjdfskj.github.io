@@ -864,16 +864,22 @@
 }
 
 .about-resume-panel--edu {
-  min-height: 43px;
+  min-height: 101px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
 }
 
 .about-resume-panel--edu p {
   margin: 0;
+  display: grid;
+  grid-template-columns: minmax(9.5em, 1.45fr) minmax(4em, 0.75fr) minmax(3em, 0.6fr) auto;
+  column-gap: 16px;
+  align-items: baseline;
   font-size: 12px;
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 1;
   color: #707070;
   text-transform: uppercase;
 }
@@ -995,6 +1001,11 @@
   .about-start.compound {
     margin-top: 32px;
     padding-top: 0;
+  }
+
+  .about-resume-panel--edu p {
+    grid-template-columns: minmax(8em, 1.2fr) minmax(4em, 0.7fr) auto auto;
+    column-gap: 10px;
   }
 }
 
