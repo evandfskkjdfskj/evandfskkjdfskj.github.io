@@ -3138,7 +3138,12 @@ body.page-about .header-cta {
 }
 
 .exp-card:nth-child(2) .exp-media {
-  --exp-ar: 1.173 / 1;
+  /* Figma 87:823 = 603 × 509 */
+  --exp-ar: 603 / 509;
+}
+
+.exp-card:nth-child(2) .exp-media img {
+  object-position: bottom center;
 }
 
 .exp-card:nth-child(3) .exp-media {
